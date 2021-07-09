@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family Book</title>
+</head>
+<body>
+    <h1 class="title_family">
+        My Family Book
+    </h1>
+      <img class="center" src="https://lh3.googleusercontent.com/proxy/MK1NPsRGiQZ4K9grpyYvJK4z4p75NECbcL1sIZ9gpqmG355Ps7Ui-IEU6PZEosJoLKSdlKO93soQWgtGm0Swi5wsYoy4Ljs">
+    <br>
+    <br>
+      <div class="button">
+    <button class="Next" onclick="update()">Next</button>
+    </div>
+    <script>
+     var images = [
+     "https://previews.123rf.com/images/azuzl/azuzl1701/azuzl170100005/69986166-beautiful-brunette-girl-with-black-hair-carelessly-braided-plait-portrait-isolated-on-white-backgrou.jpg",
+     "https://www.pngitem.com/pimgs/m/462-4628912_cartoon-man-with-black-hair-hd-png-download.png"]
+     var i=0;
+     function update(){
+         if(i==4)
+        {
+            i=0;
+        }
+        document.getElementById("center").src = images[i];
+        i++;
+        }
+    </script>
+    <style>
+        body{
+            background-color: rgb(189, 161, 146);
+        }
+        .title_family{
+            text-align: center;
+            font-family:cursive;
+        }
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+        .Next{
+            background-color: rgb(249, 250, 179);
+            width: 100px;
+            height: 50px;
+            text-shadow: lightgray;
+            font-family: cursive;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .button{
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
